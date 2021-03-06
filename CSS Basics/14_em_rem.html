@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em & Rem Units</title>
+    <!-- Em se raporteaza la parent element. Relative to the font-size of the element (2em means 2 times the size of the current font). -->
+
+    <!-- Rem se raporteaza la root element al html, adica la 16px. Relative to font-size of the root element -->
+
+    <style>
+        /* #box-1 {
+            font-size: 20px;
+        } */
+
+        /* #box-1 p {
+            font-size: 1.5em; */
+            /* adica 1.5 * 20px = 30px */
+            /* padding: 1em; */
+            /* padding o sa fie 30px deoarece se raporteaza la font-size-ul de mai sus, cel de 1.5 em, adica de 30px */
+        /* }
+
+        #box-1 ul {
+            font-size: 1.2em;
+        } */
+
+        html {
+            font-size: 10px;
+            /* asta inseamna ca schimba valoarea default a rem-ului / root html din 16px in 10px */
+            font-size: 62.5%;
+            /* sau putem pune font-size: 62.5%; ceea ce inseamna 62.5% din 16px, adica 0px */
+        }
+
+        #box-2 h3 {
+            font-size: 2.3rem;
+        }
+
+        #box-2 p {
+           font-size: 1.6rem;
+           /* adica 1.6 * 10px = 16px */
+            line-height: 1.7rem;
+            /* adica 1.7 * 10px = 17px */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div id="box-1">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptatibus. Inventore culpa in accusantium omnis adipisci quisquam quaerat, minus natus!</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3
+                <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </li>
+                </ul>
+            </li>
+            <li>4</li>
+        </ul>
+    </div> -->
+    <div id="box-2">
+        <h3>Box Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptatibus. Inventore culpa in accusantium omnis adipisci quisquam quaerat, minus natus!</p>
+    </div>
+</body>
+</html>
