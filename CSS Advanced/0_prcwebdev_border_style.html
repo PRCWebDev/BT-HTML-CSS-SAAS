@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-style</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+        border: 10px solid salmon;
+        background: whitesmoke;
+        /* background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover; */
+        position: relative;
+        /* color: white; */
+    }
+
+    .box {
+        box-sizing: border-box;
+        margin: 20px;
+        width: 22%;
+        /* height: 55%; */
+        border: 15px solid #00BFFF;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #1c1c1c;
+        background: rgba(0, 191, 255, 0.275);
+        /* filter: blur(5px); */
+    }
+
+    #box-1 {
+        border-style: solid;
+        /* text-transform: capitalize; */
+    }
+
+    /* div::before {
+        background: rgba(0, 191, 255, 0.275);
+        filter: blur(10px);
+    } */
+
+    #box-2 {
+        border-style: dotted;
+    }
+
+    #box-3 {
+        border-style: dashed;
+    }
+
+    #box-4 {
+        border-style: double;
+    }
+
+    #box-5 {
+        border-style: groove;
+    }
+
+    #box-6 {
+        border-style: ridge;
+    }
+
+    #box-7 {
+        border-style: inset;
+    }
+
+    #box-8 {
+        border-style: outset;
+    }
+
+    #box-9 {
+        border-style: solid double dotted;
+    }
+
+    #box-10 {
+        border-style: solid dashed none double;
+    }
+
+    #box-11 {
+        border-style: none double dashed;
+    }
+
+    #box-12 {
+        border-style: solid dotted;
+    }
+
+    h3 {
+        text-transform: capitalize;
+        padding-bottom: 10px;
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h3>solid</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sint dolorem nam dicta illo, quos nihil dolores optio similique totam corrupti adipisci rerum obcaecati laboriosam aperiam. Modi est voluptatum saepe.</p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>dotted</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sint dolorem nam dicta illo, quos nihil dolores optio similique totam corrupti adipisci rerum obcaecati laboriosam aperiam. Modi est voluptatum saepe.</p>
+        </div>
+        <div id="box-3" class="box">
+            <h3>dashed</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sint dolorem nam dicta illo, quos nihil dolores optio similique totam corrupti adipisci rerum obcaecati laboriosam aperiam. Modi est voluptatum saepe.</p>
+        </div>
+        <div id="box-4" class="box">
+            <h3>double</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sint dolorem nam dicta illo, quos nihil dolores optio similique totam corrupti adipisci rerum obcaecati laboriosam aperiam. Modi est voluptatum saepe.</p>
+        </div>
+        <div id="box-5" class="box">
+            <h3>groove</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sint dolorem nam dicta illo, quos nihil dolores optio similique totam corrupti adipisci rerum obcaecati laboriosam aperiam. Modi est voluptatum saepe.</p>
+        </div>
+        <div id="box-6" class="box">
+            <h3>ridge</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sint dolorem nam dicta illo, quos nihil dolores optio similique totam corrupti adipisci rerum obcaecati laboriosam aperiam. Modi est voluptatum saepe.</p>
+        </div>
+        <div id="box-7" class="box">
+            <h3>inset</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sint dolorem nam dicta illo, quos nihil dolores optio similique totam corrupti adipisci rerum obcaecati laboriosam aperiam. Modi est voluptatum saepe.</p>
+        </div>
+        <div id="box-8" class="box">
+            <h3>outset</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sint dolorem nam dicta illo, quos nihil dolores optio similique totam corrupti adipisci rerum obcaecati laboriosam aperiam. Modi est voluptatum saepe.</p>
+        </div>
+        <div id="box-9" class="box">
+            <h3>solid double dotted</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sint dolorem nam dicta illo, quos nihil dolores optio similique totam corrupti adipisci rerum obcaecati laboriosam aperiam. Modi est voluptatum saepe.</p>
+        </div>
+        <div id="box-10" class="box">
+            <h3>solid dashed none double</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sint dolorem nam dicta illo, quos nihil dolores optio similique totam corrupti adipisci rerum obcaecati laboriosam aperiam. Modi est voluptatum saepe.</p>
+        </div>
+        <div id="box-11" class="box">
+            <h3>none double dashed</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sint dolorem nam dicta illo, quos nihil dolores optio similique totam corrupti adipisci rerum obcaecati laboriosam aperiam. Modi est voluptatum saepe.</p>
+        </div>
+        <div id="box-12" class="box">
+            <h3>solid dotted</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sint dolorem nam dicta illo, quos nihil dolores optio similique totam corrupti adipisci rerum obcaecati laboriosam aperiam. Modi est voluptatum saepe.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
