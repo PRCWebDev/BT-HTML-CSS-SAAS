@@ -37,3 +37,54 @@ body {
   line-height: 1.2;
   margin: 1rem;
 }
+
+.page p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #f4f4f4;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Page Animation */
+#page-1 h1 {
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+
+#page-1 p {
+  transform: translateX(-1800px);
+  animation: text var(--animate-speed) forwards ease-in 1s;
+}
+
+/* Keyframes */
+@keyframes heading {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes text {
+  to {
+    transform: translateX(0);
+  }
+}
