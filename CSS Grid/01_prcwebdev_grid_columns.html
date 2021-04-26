@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Columns</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid {
+            display: grid;
+            /* gtc200px200px200px */
+            /* grid-template-columns: 200px 200px 200px; */
+
+            /* grid-template-columns: 200px auto 200px; */
+
+            /* gtcr */
+            /* grid-template-columns: repeat(); */
+
+            grid-template-columns: repeat(3, auto);
+
+            /* gg1r */
+            grid-gap: 1rem;
+        }
+
+        .item {
+            padding: 3rem;
+            background: #f4f4f4;
+            border: #ccc 5px solid;
+            border-style: outset;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        .grid .item:first-child {
+            background: #55efc4;
+        }
+
+        .grid .item:nth-child(2) {
+            background: #81ecec;
+        }
+
+        .grid .item:nth-child(3) {
+            background: #74b9ff;
+        }
+
+        .grid .item:nth-child(4) {
+            background: #a29bfe;
+        }
+
+        .grid .item:nth-child(5) {
+            background: #dfe6e9;
+        }
+
+        .grid .item:nth-child(6) {
+            background: #ffeaa7;
+        }
+
+        .grid .item:nth-child(7) {
+            background: #fab1a0;
+        }
+
+        .grid .item:nth-child(8) {
+            background: #ff7675;
+        }
+
+        /* .grid .item:nth-child(9) {
+            background: #fd79a8;
+        }
+
+        .grid .item:nth-child(10) {
+            background: #fdcb6e;
+        }
+
+        .grid .item:nth-child(11) {
+            background:#e17055;
+        } */
+
+        .grid .item:last-child {
+            background: #00b894;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        main section, aside {
+            border: 5px solid #55efc4;
+            border-style: outset;
+            background: #dfe6e9;
+            padding: 1rem;
+        }
+
+        main ul {
+            padding: 0.5rem;
+        }
+
+        main ul li {
+            list-style-type: square;
+        }
+
+        .item:hover,
+        main section:hover, 
+        main aside:hover {
+            border-style: inset;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <!-- <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div> -->
+    </div>
+
+    <main>
+        <section>
+          <h3>Welcome To My Website</h3>
+          <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, laudantium est pariatur amet quod voluptate eius sunt molestiae repellat ipsa.
+          </p>
+        </section>
+        <aside>
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Awesome Company</li>
+            <li>Awesome City</li>
+            <li>something@awesome.com</li>
+            <li>89-89-089</li>
+          </ul>
+        </aside>
+      </main>
+</body>
+</html>
